@@ -1,0 +1,28 @@
+server:
+  port: 8088
+#此项目的自定义属性
+
+spring:
+  datasource:
+      driverClassName: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://13.231.198.169/lmq?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+      username: root
+      password: Lhy0930@
+
+mybatis:
+  mapper-locations: classpath:com/example/exam01/*Mapper.xml  #注意：一定要对应mapper映射xml文件的所在路径
+  type-aliases-package: com.example.exam01.pojo  # 注意：对应实体类的路径
+
+      #pagehelper
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
+    returnPageInfo: check
+
+#logging:
+ #file: target/app.log
+  #level:
+   #ROOT: INFO
+    #com.example.exam01.dao: trace

@@ -1,0 +1,6 @@
+2019-08-16 11:16:16  [ main:1 ] - [ DEBUG ]  debug
+2019-08-16 11:16:16  [ main:2 ] - [ ERROR ]  error
+2019-08-16 11:28:38  [ main:0 ] - [ DEBUG ]  debug
+2019-08-16 11:28:38  [ main:2 ] - [ ERROR ]  error
+2019-08-16 11:31:10  [ main:0 ] - [ DEBUG ]  debug....
+[DEBUG][2019-08-16 11:32:59,015][java.lang.Class]debug....

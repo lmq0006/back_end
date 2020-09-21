@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.exam01.dao.BornResultMapper" >
+    <resultMap id="BaseResultMap" type="com.example.exam01.pojo.born" >
+        <result column="Age_group" property="Age_group" jdbcType="VARCHAR" />
+        <result column="EU_Born_Male" property="EU_Born_Male" jdbcType="INTEGER" />
+        <result column="Asian_Born_Male" property="Asian_Born_Male" jdbcType="INTEGER" />
+        <result column="EU_Born_Female" property="EU_Born_Female" jdbcType="INTEGER" />
+        <result column="Asian_Born_Female" property="Asian_Born_Female" jdbcType="INTEGER" />
+        <result column="EU_Born_Total" property="EU_Born_Total" jdbcType="INTEGER" />
+        <result column="Asian_Born_Total" property="Asian_Born_Total" jdbcType="INTEGER" />
+    </resultMap>
+    <select id="selectBornList" resultMap="BaseResultMap" >
+        select
+        *
+        from born
+    </select>
+</mapper>
